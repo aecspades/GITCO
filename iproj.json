@@ -1,0 +1,20 @@
+{
+    "description": "Arcad-example master",
+    "version": "0.0.1",
+    "includePath": [
+        "GITCO_SRC/QPROTOSRC"
+    ],
+    "repository": "git@github.com:aecspades/GITCO.git",
+    "objlib": "&verlibgitco",
+    "curlib": "*CRTDFT",
+    "extensions": {
+        "arcad": {
+            "code": "GITCO",
+            "libraryPrefix": "GCO",
+            "iasp": "*SYSBAS",
+            "validated": true
+        }
+    },
+    "buildCommand": "elias compile {branch}",
+    "compileCommand": "elias compile {branch} -f {filename}"
+}
